@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".fragments.RegistrationFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp">
+
+                <!-- Blurred Image -->
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/profile_image_foreground"
+                    android:scaleType="centerCrop"
+                    android:clickable="true" />
+
+                <!-- Camera Icon -->
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/baseline_camera_alt_24"
+                    android:alpha="0.5" />
+
+            </FrameLayout>
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg_name"
+                android:inputType="textEmailAddress"
+                android:hint="Username"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:background="@drawable/edit"
+                android:padding="20dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg_email"
+                android:inputType="textPassword"
+                android:hint="Email"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit"
+                android:padding="20dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg_pass"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/baseline_key_24"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit"
+                android:padding="20dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg_re_pass"
+                android:inputType="textPassword"
+                android:hint="Re-Type Password"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/baseline_key_24"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit"
+                android:padding="20dp"
+                />
+
+
+            <Button
+                android:id="@+id/set_cred"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:height="60dp"
+                android:padding="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Save"
+                app:cornerRadius="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:layout_marginBottom="15dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/copyright"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="15sp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" /> <!-- This view acts as a spacer to push the right text to the right side -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
